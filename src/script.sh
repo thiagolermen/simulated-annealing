@@ -1,3 +1,4 @@
+mkdir formulation_results
 for FILE in ../data/instance*.dat
 do 
     out_name="$(basename -s .dat ${FILE})"
