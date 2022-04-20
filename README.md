@@ -7,6 +7,9 @@ This project aims to develop the simulated annealing metaheuristic to solve an I
 
 Let $G = (V, E)$ a graph with costs $c_v \in \mathbb{Z}$ in each vertex $v \in V$ and values $v_a \in \mathbb{Z}$ in each edge $a \in E$. Find a subset of edges $A \subseteq E$ that maximized the sum of the values of the chosen edges less the costs of the vertices that were covered by those edges (a vertex is chosen by an edge when some incident edge to it is chosen by A).
 
+### Instances and format
+The instances are text files ```instance_n_m.dat``` where $n$ is the number of vertices and $m$ is the number of edges. The first line contains the integers $n$, $m$, separated by spaces. The next $n$ lines contain the integers $v$, $c$, separated by spaces, which corresponds to the cost $c$ of the vertex $v$. The last $m$ lines contain three integers $u$, $v$, $c$, separated by spaces, which corresponds to the edge $\{u, v\}$ with cost $c$. The vertices are indexed from 1 to $n$.
+
 ## Running the code
 
 ### Formulation
