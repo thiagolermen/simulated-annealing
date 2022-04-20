@@ -17,14 +17,17 @@ cd src
 julia formluation.jl <FILE>
 ```
 
+Where:
+
+    - <FILE>: problem instance path
+
 Or you can just run the script file for all the instances executing the command:
 ```
-chmod +x
+chmod +x script.sh
 ./script.sh
 ```
 
-Where:
-    - <FILE>: problem instance path
+The formulation results will be saved at ```src/formulation results```
 
 
 ### Metaheuristic
