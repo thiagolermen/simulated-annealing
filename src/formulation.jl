@@ -19,8 +19,7 @@ s = readline(f)
 NV = parse(Int, split(s," ")[1])
 NE = parse(Int, split(s," ")[2])
 
-# Initialize incidence matrix
-I = zeros(Bool, NE, NV)
+# Initialize vertices that are connected to each other with the edge a
 v1 = zeros(Int, NE)
 v2 = zeros(Int, NE)
 
@@ -43,8 +42,6 @@ while ! eof(f)
         s = readline(f)         
         u, v, c = [parse(Int, num) for num in split(s, " ")]
         # Include edge in the adj. matrix and add the cost
-        I[a, u] = 1
-        I[a, v] = 1
         V[a] = c
         v1[a] = u
         v2[a] = v
@@ -70,14 +67,14 @@ set_silent(model)
 @objective(model, Max, sum(V[a]*X[a] for a in 1:NE) - sum(C[v]*Y[v] for v in 1:NV))
 
 # Constraints
-# @constraint(model, R[a=1:NE, v=1:NV, w=1:NV], 2*X[a]*I[a,v]*I[a,w] <= I[a,v]*Y[v] + I[a,w]*Y[w])
 @constraint(model, R[a=1:NE], 2*X[a] <= Y[v1[a]] + Y[v2[a]])
-
-#@constraint(model, R[a=1:NE], sum(I[a, v] for v in 1:NV) == 2)
 
 # Optimize the model
 optimize!(model)
 
 # Informations about the model and results
 @show solution_summary(model)
+println("Vertices: ", findall(x->x==1, value.(X)))
+println("Edges: ", findall(x->x==1, value.(Y)))
+println("")
 end
