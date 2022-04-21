@@ -1,0 +1,199 @@
+INFO:root:Simulated annealing parameters: initial_temperature: 1.0,         final_temperature: 0.25, iterations: 10, metropolis_iterations: 1000,         cooling_rate: 0.95
+INFO:root:Running simulated annealing with instance_1000_5000.dat
+INFO:root:Total running time: 0.020157337188720703s
+INFO:root:Best solution: 
+[[575, 974], [250, 336], [477, 807]]
+INFO:root:Best objective value: 27
+
+INFO:root:Running simulated annealing with instance_5000_17500.dat
+INFO:root:Total running time: 0.1499180793762207s
+INFO:root:Best solution: 
+[[1446, 3765], [980, 2091], [1026, 4629], [4196, 4800], [2077, 2225], [2883, 4239], [1643, 1957], [1884, 4854], [923, 1450], [3440, 4873], [1701, 4629], [1592, 4125], [65, 4950], [857, 3397], [1629, 2730], [1558, 2109], [2880, 2924]]
+INFO:root:Best objective value: 294
+
+INFO:root:Running simulated annealing with instance_50_175.dat
+INFO:root:Total running time: 0.020849227905273438s
+INFO:root:Best solution: 
+[]
+INFO:root:Best objective value: 0
+
+INFO:root:Running simulated annealing with instance_1000_3500.dat
+INFO:root:Total running time: 0.023864269256591797s
+INFO:root:Best solution: 
+[[515, 723], [302, 709], [412, 875], [188, 774], [167, 207], [12, 682], [120, 515], [207, 786], [412, 455], [29, 48], [664, 688], [164, 688], [12, 207]]
+INFO:root:Best objective value: 217
+
+INFO:root:Running simulated annealing with instance_5000_125000.dat
+INFO:root:Total running time: 0.2891862392425537s
+INFO:root:Best solution: 
+[]
+INFO:root:Best objective value: 0
+
+INFO:root:Running simulated annealing with instance_50_250.dat
+INFO:root:Total running time: 0.025336027145385742s
+INFO:root:Best solution: 
+[[17, 20], [14, 41], [20, 26], [26, 48], [14, 20]]
+INFO:root:Best objective value: 88
+
+INFO:root:Running simulated annealing with instance_1000_10000.dat
+INFO:root:Total running time: 0.0832679271697998s
+INFO:root:Best solution: 
+[[307, 727]]
+INFO:root:Best objective value: 1
+
+INFO:root:Running simulated annealing with instance_500_25000.dat
+INFO:root:Total running time: 0.07464241981506348s
+INFO:root:Best solution: 
+[]
+INFO:root:Best objective value: 0
+
+INFO:root:Running simulated annealing with instance_100_350.dat
+INFO:root:Total running time: 0.029848575592041016s
+INFO:root:Best solution: 
+[[52, 94], [23, 52], [63, 94]]
+INFO:root:Best objective value: 68
+
+INFO:root:Running simulated annealing with instance_20_100.dat
+INFO:root:Total running time: 0.012072086334228516s
+INFO:root:Best solution: 
+[[1, 6], [3, 6], [14, 19], [6, 14], [6, 19], [1, 14]]
+INFO:root:Best objective value: 127
+
+INFO:root:Running simulated annealing with instance_500_2500.dat
+INFO:root:Total running time: 0.018265485763549805s
+INFO:root:Best solution: 
+[[2, 127], [101, 127], [67, 127], [423, 491]]
+INFO:root:Best objective value: 92
+
+INFO:root:Running simulated annealing with instance_200_5000.dat
+INFO:root:Total running time: 0.01877117156982422s
+INFO:root:Best solution: 
+[]
+INFO:root:Best objective value: 0
+
+INFO:root:Running simulated annealing with instance_500_1750.dat
+INFO:root:Total running time: 0.018749237060546875s
+INFO:root:Best solution: 
+[[51, 97], [141, 485], [30, 445], [92, 257], [148, 373], [140, 280], [209, 436], [77, 435], [349, 363], [221, 446], [243, 327], [243, 245], [51, 418], [310, 418], [148, 337], [337, 447], [148, 241]]
+INFO:root:Best objective value: 156
+
+INFO:root:Running simulated annealing with instance_5000_25000.dat
+INFO:root:Total running time: 0.12874507904052734s
+INFO:root:Best solution: 
+[[2243, 4943], [4483, 4916], [2635, 3651]]
+INFO:root:Best objective value: 17
+
+INFO:root:Running simulated annealing with instance_200_700.dat
+INFO:root:Total running time: 0.02074885368347168s
+INFO:root:Best solution: 
+[[24, 185], [60, 149], [60, 151]]
+INFO:root:Best objective value: 41
+
+INFO:root:Running simulated annealing with instance_5000_50000.dat
+INFO:root:Total running time: 0.10145759582519531s
+INFO:root:Best solution: 
+[[2486, 2957], [3745, 4442], [595, 1831]]
+INFO:root:Best objective value: 36
+
+INFO:root:Running simulated annealing with instance_50_75.dat
+INFO:root:Total running time: 0.017879009246826172s
+INFO:root:Best solution: 
+[[2, 36], [41, 42], [17, 41], [2, 17], [38, 44], [9, 49], [6, 49], [6, 24]]
+INFO:root:Best objective value: 146
+
+INFO:root:Running simulated annealing with instance_100_150.dat
+INFO:root:Total running time: 0.012453794479370117s
+INFO:root:Best solution: 
+[[9, 96], [18, 36], [1, 36], [66, 89], [37, 66]]
+INFO:root:Best objective value: 27
+
+INFO:root:Running simulated annealing with instance_20_30.dat
+INFO:root:Total running time: 0.013686180114746094s
+INFO:root:Best solution: 
+[[9, 12], [1, 3], [5, 6], [6, 12], [8, 12], [1, 6], [1, 8], [1, 12]]
+INFO:root:Best objective value: 132
+
+INFO:root:Running simulated annealing with instance_1000_1500.dat
+INFO:root:Total running time: 0.03347468376159668s
+INFO:root:Best solution: 
+[[333, 518], [430, 500], [348, 620], [231, 328], [433, 734], [234, 954], [232, 274], [568, 711], [635, 954], [149, 491], [559, 877], [910, 988], [783, 875], [10, 136], [601, 875], [253, 980], [113, 641], [274, 495], [569, 644], [467, 874], [627, 887], [274, 478], [444, 946], [647, 978], [359, 910], [114, 988], [119, 946], [635, 761], [10, 911], [130, 911], [495, 524], [55, 782], [219, 722], [348, 775], [219, 886], [430, 569], [250, 772], [622, 741], [644, 828], [185, 617], [462, 984], [492, 955], [774, 843], [250, 952], [10, 587], [831, 879], [193, 910], [216, 609], [523, 828], [609, 646], [114, 319], [119, 569], [193, 502], [95, 462], [875, 879], [480, 875], [482, 644], [481, 646], [185, 394], [202, 774], [711, 988], [10, 307], [232, 973], [216, 996], [422, 647], [478, 794], [481, 869], [492, 560], [633, 648], [560, 796]]
+INFO:root:Best objective value: 834
+
+INFO:root:Running simulated annealing with instance_100_500.dat
+INFO:root:Total running time: 0.025593042373657227s
+INFO:root:Best solution: 
+[[59, 64], [2, 64], [59, 89], [2, 89]]
+INFO:root:Best objective value: 111
+
+INFO:root:Running simulated annealing with instance_5000_250000.dat
+INFO:root:Total running time: 0.6917243003845215s
+INFO:root:Best solution: 
+[]
+INFO:root:Best objective value: 0
+
+INFO:root:Running simulated annealing with instance_200_1000.dat
+INFO:root:Total running time: 0.03819394111633301s
+INFO:root:Best solution: 
+[[8, 94]]
+INFO:root:Best objective value: 33
+
+INFO:root:Running simulated annealing with instance_200_300.dat
+INFO:root:Total running time: 0.025719881057739258s
+INFO:root:Best solution: 
+[[133, 159], [92, 163], [39, 53], [32, 117], [1, 163], [68, 123], [28, 75], [68, 80], [26, 117], [42, 80], [89, 118], [54, 174], [26, 114], [41, 115], [40, 113], [66, 115]]
+INFO:root:Best objective value: 172
+
+INFO:root:Running simulated annealing with instance_20_70.dat
+INFO:root:Total running time: 0.009434223175048828s
+INFO:root:Best solution: 
+[]
+INFO:root:Best objective value: 0
+
+INFO:root:Running simulated annealing with instance_500_5000.dat
+INFO:root:Total running time: 0.027568340301513672s
+INFO:root:Best solution: 
+[[119, 138]]
+INFO:root:Best objective value: 5
+
+INFO:root:Running simulated annealing with instance_1000_25000.dat
+INFO:root:Total running time: 0.05799221992492676s
+INFO:root:Best solution: 
+[]
+INFO:root:Best objective value: 0
+
+INFO:root:Running simulated annealing with instance_500_12500.dat
+INFO:root:Total running time: 0.03874397277832031s
+INFO:root:Best solution: 
+[]
+INFO:root:Best objective value: 0
+
+INFO:root:Running simulated annealing with instance_200_2000.dat
+INFO:root:Total running time: 0.08619546890258789s
+INFO:root:Best solution: 
+[]
+INFO:root:Best objective value: 0
+
+INFO:root:Running simulated annealing with instance_1000_50000.dat
+INFO:root:Total running time: 0.18497657775878906s
+INFO:root:Best solution: 
+[]
+INFO:root:Best objective value: 0
+
+INFO:root:Running simulated annealing with instance_100_1000.dat
+INFO:root:Total running time: 0.014481067657470703s
+INFO:root:Best solution: 
+[]
+INFO:root:Best objective value: 0
+
+INFO:root:Running simulated annealing with instance_5000_7500.dat
+INFO:root:Total running time: 0.054007530212402344s
+INFO:root:Best solution: 
+[[1584, 3909], [169, 1079], [3947, 4371], [2816, 2847], [391, 3617], [1349, 4901], [3649, 4649], [3460, 4930], [310, 1299], [1849, 3719], [1079, 4958], [2341, 4798], [1067, 1631], [1250, 3061], [836, 3985], [507, 2216], [2036, 3424], [38, 2242], [1033, 2698], [339, 3524], [836, 1838], [228, 4035], [230, 1140], [4065, 4649], [30, 4796], [763, 4638], [3122, 3919], [1117, 2763], [591, 1091], [519, 3648], [2679, 3015], [3366, 4332], [176, 2074], [4120, 4621], [3240, 3502], [2122, 3365], [929, 2403], [1137, 3663], [591, 4259], [339, 3391], [1367, 2829], [1203, 3258], [249, 2987], [2322, 2408], [3912, 4838], [153, 4064], [3343, 3523], [2970, 3276], [1569, 4844], [115, 1626], [1028, 4320], [658, 4010], [431, 3933], [3392, 4219], [3000, 4818], [2541, 3251], [1555, 4034], [3240, 3276], [1194, 2287], [2800, 4510], [619, 4293], [375, 2800], [256, 3391], [169, 1498], [2662, 4151], [2072, 2287], [1338, 1612]]
+INFO:root:Best objective value: 934
+
+INFO:root:Running simulated annealing with instance_500_750.dat
+INFO:root:Total running time: 0.0326237678527832s
+INFO:root:Best solution: 
+[[104, 398], [336, 410], [62, 101], [102, 236], [35, 318], [60, 398], [94, 104], [107, 115], [63, 88], [160, 371], [41, 238], [60, 322], [144, 229], [144, 160], [179, 330], [225, 367], [6, 482], [195, 260], [367, 400], [82, 85], [70, 318], [159, 224], [159, 371], [18, 167], [101, 107], [237, 239], [41, 296], [71, 441], [96, 339], [104, 379], [20, 441], [56, 284], [398, 416], [20, 450], [252, 410], [75, 237], [105, 284], [164, 296], [85, 266], [82, 454], [96, 322], [89, 105], [266, 402], [102, 350], [138, 390], [94, 337], [170, 400], [88, 138], [274, 434], [224, 441], [62, 391], [104, 266], [339, 367], [233, 275], [339, 475], [260, 284], [12, 492]]
+INFO:root:Best objective value: 754
+
