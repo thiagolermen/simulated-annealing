@@ -15,19 +15,14 @@ The instances are text files ```instance_n_m.dat``` where $n$ is the number of v
 ### Formulation
 To run the Julia code, just execute the following command:
 
+```console
+cd src && julia formluation.jl <FILE>
 ```
-cd src
-julia formluation.jl <FILE>
-```
-
-Where:
-
-    - <FILE>: problem instance path
 
 Or you can just run the script file for all the instances executing the command:
-```
-chmod +x script.sh
-./script.sh
+
+```console
+chmod +x script.sh && ./script.sh
 ```
 
 The formulation results will be saved at ```src/formulation results```
@@ -36,8 +31,13 @@ The formulation results will be saved at ```src/formulation results```
 ### Metaheuristic
 Tu run the metaheuristic using the Python script, execute the following command:
 
-```
-python3 simulated_annealing.py 
+```console
+python3 simulated_annealing.py -it <initial_temperature> \
+ -ft <final_temperature> \
+ -i <iterations> \
+ -cr <cooling_rate> \
+ -mi <metropolis_iterations> \
+ -s <save_logfile_at>
 ```
 
 ## Results
