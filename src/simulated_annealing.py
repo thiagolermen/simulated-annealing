@@ -6,17 +6,18 @@ import random
 import argparse
 import logging
 import matplotlib.pyplot as plt
+import pathlib as pl
+from datetime import datetime
 
-solutions = []
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Simulated annealing parameters")
-    parser.add_argument('--initial_temperature', "-it", type=float, default=25)
-    parser.add_argument('--final_temperature', "-ft", type=float, default=0.25)
-    parser.add_argument('--iterations', "-i", type=int, default=10)
+    parser.add_argument('--initial_temperature', "-it", type=float, default=0.99)
+    parser.add_argument('--final_temperature', "-ft", type=float, default=0.2)
+    parser.add_argument('--iterations', "-i", type=int, default=100)
     parser.add_argument('--cooling_rate', "-cr", type=float, default=0.99)
     parser.add_argument('--metropolis_iterations', "-mi", type=int, default=1000)
-    parser.add_argument('--save_at', "-s", type=str, default='')
+    parser.add_argument('--save_at', "-s", type=str, default='/home/tslermen/Documents/simulated-annealing/src/metaheuristic_results')
     return parser.parse_args()
 
 
@@ -79,6 +80,8 @@ class Simulated_Annealing():
         self.iterations = iterations
         self.metropolis_iterations = metropolis_iterations
         self.cooling_rate = cooling_rate
+        self.all_objective_values = []
+        self.total_iterations = 0
 
     def run(self):
         """Run the simulated annealing heuristic using the parameters given as input
@@ -94,12 +97,15 @@ class Simulated_Annealing():
         while temperature >= self.final_temperature:
             for _ in range(self.iterations):
                 solution, objective_value = self.metropolis(solution, temperature, objective_value)
+                # For sake of comparasion  
+                self.all_objective_values.append(objective_best_value)
+                self.total_iterations += 1
                 if objective_value > objective_best_value:
                     objective_best_value = objective_value
                     best_solution = solution
 
             temperature = self.cooling_rate*temperature
-
+                
         return best_solution, objective_best_value
 
     def metropolis(self, solution, temperature, objective_value):
@@ -125,6 +131,7 @@ class Simulated_Annealing():
                 if threshold < probability:
                     solution = neighbor
                     objective_value = neighbor_objective_value
+
 
         return solution, objective_value
     
@@ -185,6 +192,13 @@ class Simulated_Annealing():
         exponent = x / temperature
         return e ** exponent
 
+    def plot_solutions(self, save_at):
+        plt.plot(range(self.total_iterations),  self.all_objective_values)
+        plt.ylabel('Objective value')
+        plt.xlabel('Iterations')
+        plt.title(os.path.basename(self.filename)[:-4])
+        plt.savefig(f'{save_at}/{os.path.basename(self.filename)[:-4]}.jpg')
+        plt.close()
 
 if __name__ == '__main__':
 
@@ -198,9 +212,14 @@ if __name__ == '__main__':
     iterations = args.iterations
     metropolis_iterations = args.metropolis_iterations
     cooling_rate = args.cooling_rate
-    logging.basicConfig(filename=args.save_at,
+    now = datetime.now()
+    datetime = now.strftime("%d-%m-%Y-%H:%M:%S")
+    save_at = f'{args.save_at}/it{initial_temperature}-if{final_temperature}-i{iterations}-mi{metropolis_iterations}-r{cooling_rate}'
+
+    pl.Path(save_at).mkdir(parents=True, exist_ok=True)
+    logging.basicConfig(filename=f'{save_at}/log-{datetime}.txt',
                         filemode='a',
-                        level=logging.DEBUG)
+                        level=logging.INFO)
 
     logging.info(f'Simulated annealing parameters: initial_temperature: {initial_temperature}, \
         final_temperature: {final_temperature}, iterations: {iterations}, metropolis_iterations: {metropolis_iterations}, \
@@ -223,6 +242,8 @@ if __name__ == '__main__':
         final_time = time.time()
         total_time = final_time - initial_time
         logging.info(f'Total running time: {total_time}s')
+
+        simulated_annealing.plot_solutions(save_at)
 
         logging.info(f'Best solution: \n{solution}')
         logging.info(f'Best objective value: {objective_value}\n')
