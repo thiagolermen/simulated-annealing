@@ -1,0 +1,51 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_5000_125000.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 4.27000e+02
+  Objective bound      : 4.27000e+02
+  Relative gap         : 0.00000e+00
+  Dual objective value : 4.27000e+02
+
+* Work counters
+  Solve time (sec)   : 4.02410e+00
+  Barrier iterations : 0
+  Node count         : 1
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_5000_125000.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 4.27000e+02
+  Objective bound      : 4.27000e+02
+  Relative gap         : 0.00000e+00
+  Dual objective value : 4.27000e+02
+
+* Work counters
+  Solve time (sec)   : 6.56360e+00
+  Barrier iterations : 0
+  Node count         : 1
+
+Vertices: [4553, 4907, 5839, 6057, 6492, 7398, 8162, 8620, 10749, 11375, 12109, 12361, 12539, 13085, 13434, 15634, 16165, 18016, 19812, 23867, 24061, 26442, 27668, 27760, 29720, 29977, 37013, 41363, 41849, 44475, 44536, 44867, 44892, 45748, 45975, 46860, 46907, 47330, 53452, 54031, 57456, 58958, 61560, 65582, 67483, 70237, 71584, 71912, 74824, 76304, 76908, 77154, 77402, 77857, 77990, 79146, 80480, 81794, 82633, 83748, 90767, 91701, 93163, 95790, 97526, 98350, 99787, 99866, 100088, 104419, 105601, 106161, 106572, 108759, 108839, 108969, 109478, 110695, 115065, 117700, 120386, 120502, 123477, 124204]
+Edges: [22, 128, 164, 183, 300, 328, 453, 618, 719, 865, 1046, 1053, 1094, 1204, 1226, 1471, 1560, 1576, 1603, 1620, 1723, 1750, 1816, 1925, 1936, 1963, 1997, 2260, 2281, 2321, 2459, 2479, 2581, 2633, 2694, 2695, 2746, 2760, 2812, 2845, 2886, 2939, 2979, 3078, 3306, 3332, 3351, 3372, 3538, 3543, 3579, 3881, 3889, 3935, 3957, 3962, 4012, 4118, 4214, 4291, 4320, 4341, 4353, 4357, 4391, 4483, 4523, 4570, 4820, 4843, 4885, 4957, 4969]
+

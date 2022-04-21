@@ -1,0 +1,51 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_200_2000.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 3.51000e+02
+  Objective bound      : 3.51000e+02
+  Relative gap         : 0.00000e+00
+  Dual objective value : 3.51000e+02
+
+* Work counters
+  Solve time (sec)   : 3.50440e-02
+  Barrier iterations : 0
+  Node count         : 1
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_200_2000.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 3.51000e+02
+  Objective bound      : 3.51000e+02
+  Relative gap         : 0.00000e+00
+  Dual objective value : 3.51000e+02
+
+* Work counters
+  Solve time (sec)   : 5.19700e-02
+  Barrier iterations : 0
+  Node count         : 1
+
+Vertices: [47, 50, 80, 90, 147, 150, 162, 193, 198, 221, 229, 350, 356, 362, 395, 400, 416, 478, 480, 493, 501, 542, 589, 592, 602, 610, 652, 664, 677, 731, 817, 830, 844, 918, 950, 1114, 1170, 1178, 1191, 1205, 1274, 1283, 1292, 1319, 1348, 1362, 1408, 1485, 1488, 1500, 1507, 1513, 1567, 1594, 1625, 1628, 1661, 1675, 1685, 1692, 1707, 1710, 1780, 1783, 1784, 1823, 1831, 1833, 1870, 1895, 1953, 1964, 1966, 1986, 1990, 1999]
+Edges: [1, 9, 22, 24, 32, 33, 34, 54, 57, 58, 59, 92, 102, 103, 113, 115, 117, 122, 128, 132, 134, 135, 139, 152, 155, 161, 164, 168, 171, 187]
+

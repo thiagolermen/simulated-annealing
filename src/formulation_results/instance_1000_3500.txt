@@ -1,0 +1,51 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_1000_3500.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 1.19800e+03
+  Objective bound      : 1.19800e+03
+  Relative gap         : 0.00000e+00
+  Dual objective value : 1.19800e+03
+
+* Work counters
+  Solve time (sec)   : 1.41839e-01
+  Barrier iterations : 0
+  Node count         : 1
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_1000_3500.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 1.19800e+03
+  Objective bound      : 1.19800e+03
+  Relative gap         : 0.00000e+00
+  Dual objective value : 1.19800e+03
+
+* Work counters
+  Solve time (sec)   : 5.72182e-01
+  Barrier iterations : 0
+  Node count         : 1
+
+Vertices: [11, 25, 30, 56, 63, 104, 106, 121, 145, 151, 157, 166, 176, 180, 186, 190, 203, 224, 255, 261, 275, 276, 310, 311, 319, 349, 357, 368, 370, 376, 427, 473, 478, 480, 493, 496, 511, 528, 537, 547, 557, 558, 559, 569, 578, 585, 586, 601, 603, 633, 638, 667, 697, 701, 743, 747, 759, 764, 784, 821, 825, 839, 841, 860, 889, 892, 901, 908, 918, 927, 940, 960, 962, 981, 1008, 1021, 1025, 1026, 1055, 1059, 1101, 1115, 1116, 1129, 1130, 1143, 1154, 1169, 1177, 1180, 1181, 1210, 1217, 1219, 1255, 1295, 1324, 1327, 1343, 1349, 1372, 1376, 1378, 1453, 1481, 1483, 1486, 1496, 1498, 1512, 1519, 1526, 1551, 1561, 1574, 1580, 1618, 1630, 1642, 1667, 1682, 1684, 1721, 1770, 1777, 1789, 1813, 1819, 1824, 1829, 1845, 1893, 1898, 1952, 1970, 1975, 1981, 2004, 2005, 2037, 2038, 2042, 2089, 2090, 2095, 2109, 2116, 2119, 2120, 2125, 2162, 2183, 2192, 2194, 2223, 2236, 2241, 2252, 2257, 2282, 2285, 2341, 2342, 2370, 2377, 2384, 2393, 2445, 2447, 2457, 2464, 2506, 2510, 2528, 2539, 2561, 2610, 2613, 2619, 2622, 2623, 2635, 2636, 2650, 2658, 2674, 2676, 2678, 2681, 2685, 2686, 2696, 2697, 2710, 2737, 2753, 2757, 2761, 2784, 2785, 2807, 2827, 2830, 2838, 2855, 2861, 2864, 2873, 2875, 2876, 2893, 2896, 2913, 2939, 2950, 2969, 2994, 3041, 3045, 3091, 3101, 3104, 3134, 3137, 3160, 3190, 3202, 3205, 3242, 3263, 3285, 3289, 3325, 3333, 3340, 3357, 3372, 3384, 3405, 3457, 3459, 3463, 3470, 3480, 3484]
+Edges: [5, 6, 12, 13, 20, 26, 27, 28, 30, 36, 49, 52, 53, 57, 67, 87, 89, 111, 121, 128, 150, 156, 165, 168, 181, 187, 189, 190, 197, 198, 203, 208, 212, 213, 216, 221, 222, 232, 236, 249, 281, 285, 290, 296, 299, 303, 313, 321, 327, 331, 337, 343, 347, 355, 370, 371, 387, 389, 390, 395, 397, 400, 402, 405, 409, 413, 414, 421, 426, 441, 451, 456, 463, 468, 470, 476, 482, 493, 498, 508, 513, 514, 516, 521, 523, 527, 534, 558, 560, 574, 576, 589, 618, 631, 632, 640, 643, 646, 657, 661, 665, 667, 668, 673, 683, 686, 689, 691, 693, 697, 706, 710, 724, 736, 745, 748, 749, 755, 762, 764, 765, 766, 769, 774, 775, 781, 782, 787, 788, 789, 791, 803, 804, 816, 820, 823, 825, 827, 837, 844, 849, 866, 876, 880, 894, 900, 902, 906, 907, 910, 912, 917, 920, 922, 936, 938, 946, 953, 973, 978, 980, 988, 992, 1000]
+

@@ -1,0 +1,51 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_200_1000.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 1.41000e+02
+  Objective bound      : 1.41000e+02
+  Relative gap         : 0.00000e+00
+  Dual objective value : 1.41000e+02
+
+* Work counters
+  Solve time (sec)   : 2.51262e-02
+  Barrier iterations : 0
+  Node count         : 1
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_200_1000.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 1.41000e+02
+  Objective bound      : 1.41000e+02
+  Relative gap         : 0.00000e+00
+  Dual objective value : 1.41000e+02
+
+* Work counters
+  Solve time (sec)   : 3.69849e-02
+  Barrier iterations : 0
+  Node count         : 1
+
+Vertices: [1, 31, 114, 140, 173, 207, 234, 296, 432, 442, 622, 645, 670, 708, 735, 746, 749, 755, 808, 859, 869, 877, 889, 892, 932, 982]
+Edges: [9, 12, 13, 22, 24, 43, 44, 46, 95, 114, 115, 130, 132, 137, 139, 152, 163, 179, 182, 190]
+

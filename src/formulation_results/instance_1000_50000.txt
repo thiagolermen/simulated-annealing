@@ -1,0 +1,51 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_1000_50000.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 4.21000e+02
+  Objective bound      : 4.21000e+02
+  Relative gap         : 0.00000e+00
+  Dual objective value : 4.21000e+02
+
+* Work counters
+  Solve time (sec)   : 7.33002e-01
+  Barrier iterations : 0
+  Node count         : 1
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_1000_50000.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 4.21000e+02
+  Objective bound      : 4.21000e+02
+  Relative gap         : 0.00000e+00
+  Dual objective value : 4.21000e+02
+
+* Work counters
+  Solve time (sec)   : 1.61217e+00
+  Barrier iterations : 0
+  Node count         : 1
+
+Vertices: [621, 627, 1902, 2630, 4211, 4710, 5082, 5544, 6137, 7431, 8082, 8319, 11231, 11883, 11936, 12096, 12356, 14136, 14885, 15600, 17734, 19842, 21036, 21373, 22240, 22264, 23243, 23712, 24300, 24371, 24841, 28674, 29894, 30405, 30488, 32652, 33062, 34863, 35297, 36098, 36262, 36778, 37956, 38049, 38591, 38823, 39513, 40040, 42784, 43636, 43941, 44270, 46014, 46813, 47167, 47532, 47568, 48615]
+Edges: [72, 75, 76, 141, 218, 258, 272, 377, 514, 528, 606, 616, 624, 634, 675, 730, 790, 808, 827, 888, 890, 897, 898, 905, 908, 912, 976, 979]
+

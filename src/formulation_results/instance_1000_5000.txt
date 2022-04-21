@@ -1,0 +1,51 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_1000_5000.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 6.78000e+02
+  Objective bound      : 6.78000e+02
+  Relative gap         : 0.00000e+00
+  Dual objective value : 6.78000e+02
+
+* Work counters
+  Solve time (sec)   : 1.03870e-01
+  Barrier iterations : 0
+  Node count         : 1
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-18
+Set parameter TimeLimit to value 3600
+../data/instance_1000_5000.dat
+solution_summary(model) = * Solver : Gurobi
+
+* Status
+  Termination status : OPTIMAL
+  Primal status      : FEASIBLE_POINT
+  Dual status        : NO_SOLUTION
+  Message from the solver:
+  "Model was solved to optimality (subject to tolerances), and an optimal solution is available."
+
+* Candidate solution
+  Objective value      : 6.78000e+02
+  Objective bound      : 6.78000e+02
+  Relative gap         : 0.00000e+00
+  Dual objective value : 6.78000e+02
+
+* Work counters
+  Solve time (sec)   : 1.70323e-01
+  Barrier iterations : 0
+  Node count         : 1
+
+Vertices: [57, 133, 161, 190, 247, 277, 303, 304, 387, 466, 506, 535, 573, 635, 638, 657, 668, 744, 834, 1052, 1062, 1120, 1151, 1241, 1260, 1267, 1274, 1400, 1407, 1430, 1433, 1439, 1465, 1469, 1491, 1575, 1666, 1826, 1856, 1964, 2005, 2007, 2056, 2058, 2077, 2164, 2199, 2227, 2411, 2537, 2599, 2641, 2725, 2748, 2799, 2838, 2876, 2889, 2957, 2962, 2974, 3035, 3037, 3059, 3085, 3086, 3104, 3143, 3364, 3474, 3493, 3616, 3837, 3957, 3995, 4064, 4083, 4138, 4143, 4195, 4207, 4216, 4401, 4473, 4497, 4523, 4556, 4596, 4614, 4686, 4695, 4706, 4804]
+Edges: [6, 11, 36, 38, 89, 150, 164, 185, 206, 209, 233, 239, 240, 246, 251, 253, 258, 278, 294, 300, 303, 319, 335, 337, 341, 420, 441, 476, 478, 480, 490, 499, 506, 536, 576, 578, 601, 629, 635, 658, 666, 683, 693, 722, 730, 734, 745, 763, 778, 779, 788, 791, 794, 808, 815, 820, 823, 837, 845, 852, 857, 865, 870, 886, 908, 946, 951, 964, 969, 973, 975, 981, 982, 985, 997]
+
