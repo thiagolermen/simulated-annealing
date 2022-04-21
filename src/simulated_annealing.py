@@ -5,6 +5,7 @@ import time
 import random
 import argparse
 import logging
+import matplotlib.pyplot as plt
 
 solutions = []
 
@@ -17,6 +18,7 @@ def parse_args():
     parser.add_argument('--metropolis_iterations', "-mi", type=int, default=1000)
     parser.add_argument('--save_at', "-s", type=str, default='')
     return parser.parse_args()
+
 
 def parse_pair_int(s):
     a, b = s.split(" ")
@@ -65,11 +67,12 @@ def get_files():
 
 class Simulated_Annealing():
     def __init__(self, filename, initial_solution, initial_temperature, iterations, metropolis_iterations, cooling_rate):
+        self.filename = filename
         self.total_vertices, \
         self.total_edges, \
         self.vertices_costs, \
         self.edges_costs, \
-        self.graph = read_file(filename)
+        self.graph = read_file(self.filename)
         self.initial_solution = initial_solution
         self.initial_temperature = initial_temperature
         self.final_temperature = final_temperature
@@ -77,7 +80,11 @@ class Simulated_Annealing():
         self.metropolis_iterations = metropolis_iterations
         self.cooling_rate = cooling_rate
 
-    def simulated_annealing(self):
+    def run(self):
+        """Run the simulated annealing heuristic using the parameters given as input
+
+        Return: List[List] the best found solution, Int the best objective value calculated
+        """
         temperature = self.initial_temperature
         best_solution = self.initial_solution
         solution = self.initial_solution
@@ -85,7 +92,6 @@ class Simulated_Annealing():
         objective_best_value = 0
 
         while temperature >= self.final_temperature:
-            # Some iterations with a constant T
             for _ in range(self.iterations):
                 solution, objective_value = self.metropolis(solution, temperature, objective_value)
                 if objective_value > objective_best_value:
@@ -97,6 +103,15 @@ class Simulated_Annealing():
         return best_solution, objective_best_value
 
     def metropolis(self, solution, temperature, objective_value):
+        """Run the metropilis algorithm using the given parameters
+
+        Args:
+            - solution: current solution
+            - temperature: current temperature
+            - objective_value: current objective value based on the current temperature
+
+        Return: List[List] best found solution found using the algorithm, Int best objective value found
+        """
         for _ in range(self.iterations):
             neighbor, neighbor_objective_value = self.choose_neighbor(solution, objective_value)
             delta = neighbor_objective_value - objective_value
@@ -114,6 +129,11 @@ class Simulated_Annealing():
         return solution, objective_value
     
     def choose_neighbor(self, solution, objective_value):
+        """Choose a random naighbor based on the current solution
+        Args:
+            - solution: current solution
+            - objective_value: current objetive value
+        """
         index = random.randint(0, len(self.graph)-1)
         edge = self.graph[index]
         neighbor = solution[:]
@@ -127,6 +147,14 @@ class Simulated_Annealing():
         return neighbor, objective_value
 
     def objective(self, solution, objective_value, edge, edge_index, remove):
+        """Calculates the updated objective value based on the new neighbor structure
+        Args:
+            - solution: current solution
+            - objective)value: current objective value
+            - edge: edge that is going to be either removed or added
+            - edge_index: index of the edge that is going to be either removed or added
+            - remove: boolean taht defines if the edge is going to be either removed or added
+        """
         if remove:
             objective_value -= self.evaluate_edge(solution, edge, edge_index)
         else:
@@ -135,8 +163,14 @@ class Simulated_Annealing():
         return objective_value
 
     def evaluate_edge(self, solution, edge, edge_index):
-        #print(edge_index)
-        #print(self.vertices_costs)
+        """Evaluated the edge based on the current solution. If the edge is already in the solution
+        it is not necessary to subtract its cost from the solution
+
+        Args:
+            - solution: current solution
+            - edge: edge that is going to be either removed or added
+            - edge_index: index of the edge that is going to be either removed or added
+        """
         value = self.edges_costs[edge_index]
         setson = set([i[0] for i in solution]+[i[1] for i in solution])
         if edge[0] not in setson:
@@ -184,13 +218,11 @@ if __name__ == '__main__':
                                                     cooling_rate
                                                 )
 
+        solution, objective_value = simulated_annealing.run()
+
         final_time = time.time()
         total_time = final_time - initial_time
         logging.info(f'Total running time: {total_time}s')
 
-        solution, objective_value = simulated_annealing.simulated_annealing()
-
         logging.info(f'Best solution: \n{solution}')
         logging.info(f'Best objective value: {objective_value}\n')
-
-
