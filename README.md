@@ -40,4 +40,9 @@ python3 simulated_annealing.py -it <initial_temperature> \
  -s <save_logfile_at>
 ```
 
+This command will run all the instances included in the ```data``` directory.
+
 ## Results
+Using the Gurobi optimizer and our own fomulation we could achieve optimal results for all instances.
+
+Even though, using defined parameters set as default in the code, we could achieve results taht were close to the optimal.
