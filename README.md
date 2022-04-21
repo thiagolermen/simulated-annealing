@@ -1,7 +1,7 @@
 # Simulated Annealing 
 
 ## About
-This project aims to develop the simulated annealing metaheuristic to solve an Integer Programming problem. For sake of comparasion we are going to formulate the problem using JuMP achieving the results with its optimizer and also tun the instances using the metaheuristic defined above.
+This project aims to develop the simulated annealing metaheuristic to solve an Integer Programming problem. For sake of comparasion we are going to formulate the problem using JuMP achieving the results with Gurobi optimizer and also tun the instances using the metaheuristic defined above.
 
 ### Problem statement
 
